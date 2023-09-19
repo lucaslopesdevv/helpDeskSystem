@@ -3,6 +3,7 @@ import { fastifyCors } from "@fastify/cors";
 import { getAllUsersRoute } from "./routes/users/get-all-users";
 import { getAllTicketsRoute } from "./routes/tickets/get-all-tickets";
 import { createUser } from "./routes/users/create-user";
+import { createTicket } from "./routes/tickets/create-ticket";
 
 const app = fastify();
 
@@ -13,6 +14,7 @@ app.register(fastifyCors, {
 app.register(getAllUsersRoute);
 app.register(getAllTicketsRoute);
 app.register(createUser);
+app.register(createTicket);
 
 const portApi = 3333;
 

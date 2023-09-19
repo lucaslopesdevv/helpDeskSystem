@@ -2,17 +2,30 @@
 GET http://localhost:3333/users
 ###
 
-# @name get-tickets
-GET http://localhost:3333/tickets
-###
 # @name create-user
 POST http://localhost:3333/createUser
 Content-Type: application/json
 
 {
-  "username": "teste-segundo",
+  "username": "teste-terceiro",
   "fullname": "teste fulano",
   "email": "teste-novofulano@hotmail.com",
   "password": "1234"
+}
+###
+# @name get-tickets
+GET http://localhost:3333/tickets
+
+
+###
+
+# @name create-ticket
+POST http://localhost:3333/createTicket
+Content-Type: application/json
+
+{
+  "title": "Testando novo ticket",
+  "description": "new ticket description",
+  "user_id": "05b6ce27-60ed-4867-890b-8de9b4fc46f0"
 }
 ###
