@@ -1,0 +1,18 @@
+# @name get-users
+GET http://localhost:3333/users
+###
+
+# @name get-tickets
+GET http://localhost:3333/tickets
+###
+# @name create-user
+POST http://localhost:3333/createUser
+Content-Type: application/json
+
+{
+  "username": "teste-segundo",
+  "fullname": "teste fulano",
+  "email": "teste-novofulano@hotmail.com",
+  "password": "1234"
+}
+###
